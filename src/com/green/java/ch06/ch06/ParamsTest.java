@@ -10,8 +10,8 @@ public class ParamsTest {
         System.out.println(nb.num);
 
     }
-    static void changeNum(int num) {
-        num = 20;
+    static void changeNum(int a) {
+        a = 20;
     }
 
     static void changeNum2(NumberBox nb2) {
