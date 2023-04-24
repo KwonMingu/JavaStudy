@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class FlowEx25Method {
 
     public static int sumStringNumber(String str) {
+
         int val =Integer.parseInt(str);
         int sum = 0;
         while (val > 0) {

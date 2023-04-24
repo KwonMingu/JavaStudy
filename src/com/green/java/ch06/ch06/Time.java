@@ -1,7 +1,7 @@
 package com.green.java.ch06.ch06;
 
 public class Time {
-    private int hour;
+    private int hour;  // 생성자, 메소드(세터)를 통해서 접근가능
     private int minute;
     private int second;
 
