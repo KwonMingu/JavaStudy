@@ -4,22 +4,19 @@ public class CardDeck {
     Card[] cards;
     int idx;
 
+    CardDeck() { init(); }
 
-
-
-    CardDeck() {
+    void init() {
         cards = new Card[52];
 //        for (int i = 0; i < cards.length; i++) {
-//            cards[i] = new Card("    ", "    ");
-//
+//            cards[i] = new Card("", "");
 //        }
 
         int idx = 0;
-
-        for (int i = 0; i < Card.KINDS.length; i++) {
-            for (int j = 1; j <= Card.NUM_MAX; j++) {
+        for(int i=0; i<Card.KINDS.length; i++) {
+            for(int z=1; z<=Card.NUM_MAX; z++) {
                 String num = null;
-                switch (j) {
+                switch(z) {
                     case 1:
                         num = "A";
                         break;
@@ -33,34 +30,44 @@ public class CardDeck {
                         num = "K";
                         break;
                     default:
-                        num = String.valueOf(j);
+                        num = String.valueOf(z);
                 }
                 cards[idx++] = new Card(Card.KINDS[i], num);
-
             }
         }
-
     }
 
-    void openCard() {
-        for (Card c : cards) {
+    void openCards() {
+        for(Card c : cards) {
             System.out.println(c);
         }
     }
+
     void shuffle() {
-
         for (int i = 0; i < cards.length; i++) {
-            int rIdx= (int)(Math.random()* cards.length);
+            int rIdx = (int)(Math.random() * cards.length);
+            if(i == rIdx) { continue; }
             Card temp = cards[i];
-            cards[i]=cards[rIdx];
-            cards[rIdx]=temp;
+            cards[i] = cards[rIdx];
+            cards[rIdx] = temp;
         }
-
     }
+
     Card pick() {
-        Card temp = cards[idx];
-        cards[idx]=null;
+        if(idx == cards.length) { return null; }
+        Card c = cards[idx];
+        cards[idx] = null;
         idx++;
-        return temp;
+        return c;
     }
 }
+
+
+
+
+
+
+
+
+
+
