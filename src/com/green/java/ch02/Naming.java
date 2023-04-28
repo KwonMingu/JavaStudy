@@ -40,7 +40,7 @@ public class Naming {
         String pUblic;
 
         //상수는 전부 대문자, 스네이크 케이스 기법
-        final int NUM = 13;
+        final int MAX_NUM = 13;
         //NUM = 20;
     }
 }

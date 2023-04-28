@@ -8,6 +8,7 @@ public class ArrayListStudy1 {
         ArrayList list = new ArrayList();
         list.add(10); //0번방
         list.add(20); //1번방
+        list.add(30); //1번방
         list.add("ddd");
 
         Object obj = 10;

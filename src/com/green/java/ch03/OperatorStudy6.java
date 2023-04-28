@@ -10,6 +10,7 @@ public class OperatorStudy6 {
         System.out.println(n2);
         System.out.println(val);
 
+
     }
 
 }

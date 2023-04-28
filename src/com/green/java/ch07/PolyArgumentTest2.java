@@ -47,6 +47,9 @@ class Buyer3 {
         System.out.printf("%s을(를) %,d만원에 구매하였습니다.\n", p, p.getPrice());
     }
 
+
+
+
     public void printState() {
         System.out.printf("나의 현재 돈은 %,d만원 입니다. 현재 보너스 점수는 %,d점 입니다.\n", money, bonusPoint);
     }
