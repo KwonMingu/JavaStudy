@@ -1,4 +1,4 @@
-package com.green.java.ch04;
+package com.green.java.ch04.vendingmachine;
 
 public class VendingMachineTest {
         public static void main(String[] args) {
@@ -8,7 +8,21 @@ public class VendingMachineTest {
                 vm.insert(10000);
 
                 vm.showMoney(); // 현재 잔액은 30,000입니다.
+                vm.showMenus();
 
-        }                                                                       
+                vm.purchaseDrink(1);
+                vm.purchaseDrink(2);
+                vm.purchaseDrink(3);
+
+
+                vm.showPurchaseList();
+
+                vm.showMoney();
+
+
+
+        }
+        
+
 
 }

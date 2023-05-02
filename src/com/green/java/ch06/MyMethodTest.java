@@ -12,6 +12,13 @@ public class MyMethodTest {
         mm.sum(20, 11);
 
         int result = mm.sum2(10, 245);
+
+        String str = " a_b_다_라_마바   ";
+        String r1 = str.trim().replace("_","*").toUpperCase();
+        System.out.println(r1);
+
+
+
         System.out.println("result : " + result);
 
         PrintStream ps = System.out;
