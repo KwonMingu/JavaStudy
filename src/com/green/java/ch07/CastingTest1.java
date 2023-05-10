@@ -8,6 +8,7 @@ public class CastingTest1 {
 
         fc.water();
         car = fc;
+        Object obj = fc;
         //car.water();
         //car = new Car();
         if(car instanceof FireCar) {

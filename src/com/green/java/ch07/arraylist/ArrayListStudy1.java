@@ -1,11 +1,12 @@
 package com.green.java.ch07.arraylist;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
 public class ArrayListStudy1 {
     public static void main(String[] args) {
-        ArrayList list = new ArrayList();
+        List list = new ArrayList();
         list.add(10); //0번방
         list.add(20); //1번방
         list.add(30); //1번방
