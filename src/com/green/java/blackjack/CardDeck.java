@@ -1,6 +1,5 @@
 package com.green.java.blackjack;
 
-import com.green.java.ch06.Car;
 
 import java.util.ArrayList;
 import java.util.Collection;
